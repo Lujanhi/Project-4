@@ -58,13 +58,6 @@ console.log(`Active Phrase - phrase: ${game.activePhrase.phrase}`); */
 
 //gameOver(true)
 
-
-$("#btn__reset").click(() => {
-    game = new Game();
-    game.resetGameBoard();
-    game.startGame();
-  });
-
   // first attempt 
    
 /* $("#btn__reset").on("click", function () {
@@ -74,18 +67,22 @@ $("#btn__reset").click(() => {
 
 }); */
 
+
+
+
+$("#btn__reset").click(() => { // botton for the new game , reset game borad and start game 
+    game = new Game();
+    game.resetGameBoard();
+    game.startGame();
+  });
+
 $("#qwerty button").click((e) => {
     const $target = $(e.target); //button that was clicked
     game.handleInteraction($target);
   });
   
-if (Event.className === 'key') {
-    game.handleInteraction(e)
-};
+//if (Event.className === 'key') {
+   // game.handleInteraction(e)
+//};
 
 
-
-  
-    //the qwerty button will initiate on the click of the DOM keyboard
-    
-  

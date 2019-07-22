@@ -176,11 +176,11 @@ button {
 }
 
 .title {
-  color: #FFF;
+  color: rgb(27, 4, 110);
 }
 
 .start {
-  background-color: #3a3f58;
+  background-color: #0678ad;
 }
 
 .start a {
@@ -196,7 +196,7 @@ button {
 }
 
 .lose {
-  background-color: #f5785f;
+  background-color: #6d6e03;
 }
 
 .lose a {
